@@ -9,10 +9,10 @@ import numpy as np
 import h5py
 
 train_data = np.load(open('bottleneck_features/bn_features_train.npy', 'rb'))
-train_labels = np.array([0] * 1000 + [1] * 1000)
+train_labels = np.array([0] * 1 + [1] * 1)
 
 validation_data = np.load(open('bottleneck_features/bn_features_validation.npy', 'rb'))
-validation_labels = np.array([0] * 1000 + [1] * 1000)
+validation_labels = np.array([0] * 1 + [1] * 1)
 
 def fc_model():
     fc_model = Sequential()

@@ -102,10 +102,10 @@ if __name__ == "__main__":
     print ('A half of Cristmas tree is coming :)')
     model.fit_generator(
         train_generator,
-        samples_per_epoch=2000,
+        samples_per_epoch=2,
         nb_epoch=epochs,
         validation_data=validation_generator,
-        nb_val_samples=2000,
+        nb_val_samples=2,
         callbacks=callbacks_list,
         verbose=1)
 

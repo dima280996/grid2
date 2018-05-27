@@ -46,10 +46,10 @@ if not os.path.exists('bottleneck_features/'):
     print(' ')
 
 print('Saving bn_features_train.npy to bottleneck_features/')
-bottleneck_features_train = inc_model.predict_generator(train_generator, 2000)
+bottleneck_features_train = inc_model.predict_generator(train_generator, 2)
 np.save(open('bottleneck_features/bn_features_train.npy', 'wb'), bottleneck_features_train)
 
 print('Saving bn_features_validation.npy to bottleneck_features/')
-bottleneck_features_validation = inc_model.predict_generator(validation_generator, 2000)
+bottleneck_features_validation = inc_model.predict_generator(validation_generator, 2)
 np.save(open('bottleneck_features/bn_features_validation.npy', 'wb'), bottleneck_features_validation)
 print('Finished')
